@@ -219,7 +219,7 @@ namespace Kursova
             this.registratingButton.TabIndex = 9;
             this.registratingButton.Text = "Зареєструватися";
             this.registratingButton.UseVisualStyleBackColor = false;
-            this.registratingButton.Click += new System.EventHandler(this.registratingButton_Click);
+            this.registratingButton.Click += new System.EventHandler(this.registrationButton_Click);
             // 
             // eyePicture
             // 
