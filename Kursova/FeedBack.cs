@@ -58,7 +58,7 @@ namespace Kursova
         {
             try
             { 
-                using (MailMessage mm = new MailMessage("Центр допомоги" + "<" + "draydamore@gmail.com" + ">", mailUser))
+                using (MailMessage mm = new MailMessage("Новий тікет" + "<" + mailUser + ">", "helpCenter@gmail.com"))
                 {
                     mm.Subject = theme.Text;
                     mm.Body = bodyMessage.Text;
@@ -68,7 +68,7 @@ namespace Kursova
                         sc.DeliveryMethod = SmtpDeliveryMethod.Network;
                         sc.UseDefaultCredentials = false;
                         sc.Timeout = 30000;
-                        sc.Credentials = new NetworkCredential("draydamore@gmail.com", "vrdgsgftlmlmntkh");
+                        sc.Credentials = new NetworkCredential("@mailUser", "@passwordMailUser");
                         sc.Send(mm);
                     }
                 }

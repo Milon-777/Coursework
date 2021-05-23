@@ -250,6 +250,8 @@ namespace Kursova
         {
             searchText.Clear();
             carsGrid.Rows.Clear();
+            min.Clear();
+            max.Clear();
             clearCheckedList();
             foreach (Car c in cars)
             {

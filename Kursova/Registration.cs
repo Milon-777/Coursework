@@ -351,7 +351,7 @@ namespace Kursova
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
             MySqlCommand command = new MySqlCommand(
-                "SELECT * FROM `profiles`" +
+                "SELECT * FROM `users`" +
                 "WHERE `login` = @login",
                 database.GetConnection());
             command.Parameters.Add("@login", MySqlDbType.VarChar).Value = loginUser;

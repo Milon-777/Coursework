@@ -66,7 +66,7 @@ namespace Kursova
 
         private void feedBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Close();
+            this.Hide();
             FeedBack feedback = new FeedBack(loginUser, mailUser);
             feedback.Show();
         }
